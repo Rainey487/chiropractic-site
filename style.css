@@ -84,6 +84,116 @@
     }
     figure p {
         font-weight: 200;
+        padding: 0.25em 0 0.75em 0;
+        text-align: justify;
+        font-size: 0.90em;
+    }
+    figure p a {
+        text-decoration: underline;
+        color: black;
+    }
+
+    footer {
+        background-color: #90a725;
+        display: flex;
+        justify-content: center;
+    }
+    footer ul {
+        display: flex;
+        list-style: none;
+        padding: 0.75em;
+    }
+    footer ul li {
+        padding: 0 0.30em;
+    }
+    footer ul li a {
+        color: whitesmoke;
+        text-decoration: none;
+        font-weight: 200;
+        font-size: 0.75em;
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (max-width:430px) and (orientation:landscape) {
+    header {
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 8px rgba(128, 128, 128, 0.153);
+        background-color: whitesmoke;
+    }
+    .headTitle {
+        display: flex;
+        flex-direction: row;
+        margin: 0.5em 0 0.5em 0.5em;
+    }
+    header img {
+        width: 13em;
+        margin: 0 auto;
+    }
+    /* header h1 {
+        line-height: 0.90em;
+        font-weight: 400;
+        text-align: left;
+    } */
+    /* header p {
+        line-height: 0.90em;
+        font-weight: 400;
+        text-align: center;
+    } */
+    header nav {
+        padding: 0.5em 0;
+    }
+    header ul {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+    }
+    header ul li {
+        padding: 0 0.5em;
+    }
+    header ul li a:link {
+        text-decoration: none;
+        color: black;
+        font-weight: 200;
+        text-transform: uppercase;
+    }
+    header ul li a:hover {
+        font-weight: 200;
+        color: #90a725;
+    }
+    
+    body {
+        background-color: white;
+    }
+
+    main {
+        padding: 1em;
+    }
+    main h1 {
+        font-size: 1.25em;
+        color: #90a725;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    main p {
+        font-weight: 200;
+        padding: 0.25em 0;
+        text-align: justify;
+    }
+
+    figure {
+        width: 100%;
+        padding: 0 1em 0.5em 1em;
+    }
+    figure h1 {
+        font-size: 1.25em;
+        color: #90a725;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    figure p {
+        font-weight: 200;
         padding: 0.25em 0;
         text-align: justify;
     }
