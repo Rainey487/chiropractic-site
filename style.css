@@ -31,6 +31,14 @@ main aside img {
   box-shadow: 0.15em 0.15em #90a725;
 }
 
+main aside img:hover {
+  box-shadow: 0.25em 0.25em #90a725;
+}
+
+figure figcaption {
+  display: none;
+}
+
 /* PORTRAIT PHONE SIZING */
 
 @media screen and (max-width: 430px) and (orientation: portrait) {
@@ -106,17 +114,17 @@ main aside img {
     display: none;
   }
 
-  figure {
+  summary {
     width: 100%;
     padding: 0 1em 0.5em 1em;
   }
-  figure h1 {
+  summary h1 {
     font-size: 1.25em;
     color: #90a725;
     font-weight: 400;
     text-transform: uppercase;
   }
-  figure p {
+  summary p {
     font-weight: 200;
     padding: 0.25em 0 0.75em 0;
     text-align: justify;
@@ -229,17 +237,17 @@ main aside img {
     display: none;
   }
 
-  figure {
+  summary {
     width: 100%;
-    padding: 0 1em 0.5em 1em;
+    padding: 0 3em 0.5em 3em;
   }
-  figure h1 {
+  summary h1 {
     font-size: 1.25em;
     color: #90a725;
     font-weight: 400;
     text-transform: uppercase;
   }
-  figure p {
+  summary p {
     font-weight: 200;
     padding: 0.25em 0;
     text-align: justify;
@@ -352,17 +360,17 @@ main aside img {
     align-items: center;
   }
 
-  figure {
+  summary {
     width: 100%;
     padding: 0 1em 0.5em 1em;
   }
-  figure h1 {
+  summary h1 {
     font-size: 1.25em;
     color: #90a725;
     font-weight: 400;
     text-transform: uppercase;
   }
-  figure p {
+  summary p {
     font-weight: 200;
     padding: 0.25em 0;
     text-align: justify;
@@ -475,17 +483,17 @@ main aside img {
     align-items: center;
   }
 
-  figure {
+  summary {
     width: 100%;
     padding: 0 1em 0.5em 1em;
   }
-  figure h1 {
+  summary h1 {
     font-size: 1.25em;
     color: #90a725;
     font-weight: 400;
     text-transform: uppercase;
   }
-  figure p {
+  summary p {
     font-weight: 200;
     padding: 0.25em 0;
     text-align: justify;
@@ -526,6 +534,7 @@ main aside img {
     background-color: whitesmoke;
     justify-content: space-between;
     align-items: center;
+    padding: 0 1.5em;
   }
   .headTitle {
     display: flex;
@@ -574,7 +583,7 @@ main aside img {
 
   main {
     display: flex;
-    padding: 0 1.5em;
+    padding: 0 3.5em;
     flex-direction: column;
   }
 
@@ -600,20 +609,63 @@ main aside img {
     justify-content: center;
   }
 
-  figure {
+  summary {
     width: 100%;
-    padding: 0 1em 0.5em 1em;
+    padding: 0 3em 0.5em 3em;
+    margin: 0 0 1em 0;
   }
-  figure h1 {
+  summary #address {
+    display: none;
+  }
+  summary h1 {
     font-size: 1.25em;
     color: #90a725;
     font-weight: 400;
     text-transform: uppercase;
+    margin: 0.5em 0 1em 0;
   }
-  figure p {
+  summary p {
     font-weight: 200;
     padding: 0.25em 0;
     text-align: justify;
+  }
+  summary figure iframe {
+    width: 25em;
+    height: 25em;
+    box-shadow: 0.15em 0.15em #90a725;
+    border-radius: 0.15em;
+  }
+
+  summary figure {
+    display: flex;
+  }
+  figure figcaption {
+    display: block;
+  }
+
+  summary figure figcaption {
+    padding: 0 0 0 1.5em;
+  }
+  summary figure figcaption h2 {
+    font-size: 1.1em;
+    color: #90a725;
+    font-weight: 400;
+    /* text-transform: uppercase; */
+    margin: 0.25em 0 0 0;
+  }
+  summary figure figcaption p {
+    font-weight: 200;
+    padding: 0.25em 0 0.25em 0.5em;
+    text-align: justify;
+  }
+  summary figure figcaption p a {
+    color: black;
+    text-decoration: none;
+  }
+  summary figure figcaption p a:hover {
+    color: black;
+    font-weight: 400;
+    text-decoration: underline;
   }
 
   footer {
