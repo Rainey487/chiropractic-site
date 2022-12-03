@@ -526,7 +526,7 @@ figure figcaption {
 
 /* LAPTOP SIZING */
 
-@media screen and (min-width: 1081px) {
+@media screen and (min-width: 1081px) and (max-width: 1730px) {
   header {
     display: flex;
     flex-direction: row;
@@ -672,6 +672,176 @@ figure figcaption {
     background-color: #90a725;
     display: flex;
     justify-content: space-between;
+  }
+  footer ul {
+    display: flex;
+    list-style: none;
+    padding: 0.75em;
+  }
+  footer ul li {
+    padding: 0 0.3em;
+  }
+  footer ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+  }
+}
+
+/* ABOVE LAPTOP SIZE */
+
+@media screen and (min-width: 1731px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 8px rgba(128, 128, 128, 0.153);
+    background-color: whitesmoke;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15em;
+  }
+  .headTitle {
+    display: flex;
+    flex-direction: row;
+    margin: 0.5em 0 0.5em 0.5em;
+  }
+  header img {
+    width: 13em;
+    margin: 0 auto;
+  }
+  /* header h1 {
+            line-height: 0.90em;
+            font-weight: 400;
+            text-align: left;
+        } */
+  /* header p {
+            line-height: 0.90em;
+            font-weight: 400;
+            text-align: center;
+        } */
+  header nav {
+    padding: 0.5em 0;
+  }
+  header ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+  }
+  header ul li {
+    padding: 0 0.5em;
+  }
+  header ul li a:link {
+    text-decoration: none;
+    color: black;
+    font-weight: 200;
+    text-transform: uppercase;
+  }
+  header ul li a:hover {
+    font-weight: 200;
+    color: #90a725;
+  }
+
+  body {
+    background-color: white;
+  }
+
+  main {
+    display: flex;
+    padding: 0 15em;
+    flex-direction: column;
+  }
+
+  main section {
+    width: 100%;
+  }
+  main section h1 {
+    font-size: 1.1em;
+    color: #90a725;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  main section p {
+    font-weight: 200;
+    padding: 0.5em 0;
+    text-align: justify;
+  }
+  main aside {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  summary {
+    width: 100%;
+    padding: 0 15em 0.5em 15em;
+    margin: 0 0 1em 0;
+  }
+  summary #address {
+    display: none;
+  }
+  summary h1 {
+    font-size: 1.25em;
+    color: #90a725;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0.5em 0 1em 0;
+  }
+  summary p {
+    font-weight: 200;
+    padding: 0.25em 0;
+    text-align: justify;
+  }
+  summary figure iframe {
+    width: 25em;
+    height: 25em;
+    box-shadow: 0.15em 0.15em #90a725;
+    border-radius: 0.15em;
+  }
+
+  summary figure {
+    display: flex;
+  }
+  figure figcaption {
+    display: block;
+  }
+
+  summary figure figcaption {
+    padding: 0 0 0 1.5em;
+  }
+  summary figure figcaption h2 {
+    font-size: 1.1em;
+    color: #90a725;
+    font-weight: 400;
+    /* text-transform: uppercase; */
+    margin: 0.25em 0 0 0;
+  }
+  summary figure figcaption p {
+    font-weight: 200;
+    padding: 0.25em 0 0.25em 0.5em;
+    text-align: justify;
+  }
+  summary figure figcaption p a {
+    color: black;
+    text-decoration: none;
+  }
+  summary figure figcaption p a:hover {
+    color: black;
+    font-weight: 400;
+    text-decoration: underline;
+  }
+
+  footer {
+    background-color: #90a725;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15em;
   }
   footer ul {
     display: flex;
