@@ -12,11 +12,35 @@ header {
   width: 100%;
 }
 
+header nav ul li a:visited {
+  color: black;
+}
+
+header nav ul li a:hover {
+  color: #90a725;
+}
+
+header nav ul li a:active {
+  color: black;
+}
+
 footer {
-  /* position: absolute; */
+  position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -100%;
   width: 100%;
+}
+
+footer nav ul li a:visited {
+  color: white;
+}
+
+footer nav ul li a:hover {
+  color: rgb(198, 212, 136);
+}
+
+footer nav ul li a:active {
+  color: black;
 }
 
 main {
@@ -611,7 +635,7 @@ figure figcaption {
 
   summary {
     width: 100%;
-    padding: 0 3em 0.5em 3em;
+    padding: 0 3.5em 0.5em 3.5em;
     margin: 0 0 1em 0;
   }
   summary #address {
@@ -668,10 +692,30 @@ figure figcaption {
     text-decoration: underline;
   }
 
+  summary figure figcaption ul {
+    width: 380px;
+  }
+
+  summary figure figcaption ul li {
+    font-weight: 200;
+    padding: 0.25em 0 0.25em 0.5em;
+    text-align: justify;
+    list-style: none;
+    margin-right: auto;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  summary figure figcaption ul li span {
+    margin-left: auto;
+  }
+
   footer {
     background-color: #90a725;
     display: flex;
     justify-content: space-between;
+    padding: 0 3.5em;
   }
   footer ul {
     display: flex;
