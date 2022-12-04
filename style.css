@@ -881,6 +881,25 @@ figure figcaption {
     text-decoration: underline;
   }
 
+  summary figure figcaption ul {
+    width: 380px;
+  }
+
+  summary figure figcaption ul li {
+    font-weight: 200;
+    padding: 0.25em 0 0.25em 0.5em;
+    text-align: justify;
+    list-style: none;
+    margin-right: auto;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  summary figure figcaption ul li span {
+    margin-left: auto;
+  }
+
   footer {
     background-color: #90a725;
     display: flex;
